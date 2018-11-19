@@ -1,0 +1,22 @@
+{
+  "name": "swarm-bucket",
+  "version": "1.0.0",
+  "description": "create equal peers that are responsible for 1/n of the work,",
+  "main": "./index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ryanramage/swarm-bucket.git"
+  },
+  "bugs": {
+    "url": "http://github.com/ryanramage/swarm-bucket/issues"
+  },
+  "homepage": "http://github.com/ryanramage/swarm-bucket",
+  "devDependencies": {
+    "discovery-swarm": "^5.1.2",
+    "get-port": "^4.0.0"
+  },
+  "dependencies": {
+    "deeper": "^2.1.0"
+  }
+}
