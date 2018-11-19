@@ -1,6 +1,7 @@
 const events = require('events')
 const util = require('util')
 const deepEqual = require('deeper')
+const hexBuckets = require('./hexBuckets')
 
 module.exports = Bucket
 
@@ -33,6 +34,7 @@ function calculate (myId, swarm) {
 
   let slice = Math.round(index / order.length)
   let length = order.length
-  let details = { index, length }
+  let range = hexBuckets(index, length)
+  let details = { index, length, range }
   return details
 }

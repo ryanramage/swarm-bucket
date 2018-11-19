@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const swarm = require('discovery-swarm')
 const getPort = require('get-port')
 const bucket = require('./index')
@@ -29,4 +31,3 @@ function start (port) {
     process.exit()
   })
 }
-
